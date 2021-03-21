@@ -88,7 +88,7 @@ def run():
             if idx == 0:                                 # no dejamos que el primer elemento se imprima ya que son innecesarios
                 continue
 
-            contact_book.add(row[0], row[1], row[2])     #pero si dejamos que los demás se impriman
+                contact_book.add(row[0], row[1], row[2])     #pero si dejamos que los demás se impriman
 
     while True:                                          #ciclo sin fin para mostrar la interface de opciones
         command = str(input('''
@@ -110,7 +110,7 @@ def run():
             contact_book.add(name, phone, email)
 
         elif command == 'ac':
-            name = input("contacto a actualizar")
+            name = input("contacto a actualizar: ")
             contact_book.actualizar(name)
 
         elif command == 'b':
